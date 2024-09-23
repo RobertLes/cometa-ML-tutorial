@@ -1,3 +1,5 @@
 h5py==3.8.0
 torch==1.13.1
 torchinfo==1.8.0
+numpy==1.21.6
+matplotlib==3.5.3
