@@ -14,13 +14,13 @@ Almost all python installtions have virtualenv and pip already installed. To set
 ```
 python -m venv ~/venv/CometaTutorial
 source ~/venv/CometaTutorial/bin/activate
-pip install torch==1.13.1 h5py torchinfo numpy matplotlib ipykernel
+pip install torch==1.13.1 h5py torchinfo numpy matplotlib scikit-learn ipykernel
 ```
 
 ## Using conda
 If you are more familiar with conda you can do the same with
 ```
-conda create --name CometaTutorial python=3.9 pytorch=1.13.1 h5py conda-forge::torchinfo numpy matplotlib ipykernel
+conda create --name CometaTutorial python=3.9 pytorch=1.13.1 h5py conda-forge::torchinfo numpy matplotlib scikit-learn ipykernel
 conda activate CometaTutorial
 ```
 
@@ -38,7 +38,7 @@ If instead you downloaded `jupyter` directly in the enviroment you can skip this
 Once you are done with this tutorial you can deactivate the virtualenv/conda enviroment with the command `deactivate`. Then to remove the Jupyter kernel you can run
 ```
 jupyter kernelspec list
-jupyter kernelspec uninstall CometaTutorial
+jupyter kernelspec uninstall cometatutorial
 ```
 
 For uninstalling the enviroment and cleaning your pip cache:
