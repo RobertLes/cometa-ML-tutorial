@@ -15,6 +15,8 @@ This open-data is attached to the publication [JINST 19 (2024) P08018](https://i
 
 This tutorial would not be possible with the large effort from [Kevin Grief](https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data), who really made these studies possible.
 
+![Background uncert](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/JETM-2023-06/fig_09b.png)
+
 # How to use this tutorial
 This tutorial uses Jupyter for interactive notebooks.
 
@@ -69,7 +71,6 @@ For uninstalling the enviroment and cleaning your pip cache:
 ```
 rm -r ~/venv/CometaTutorial
 pip cache purge
-```
 ```
 Or similarly for conda:
 ```
