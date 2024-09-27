@@ -1,8 +1,32 @@
+# Table of Contents
+1. [Introduction](Introduction)
+2. [How to use this tutorial](How-to-use-this-tutorial)
+    1. [Tutorial workflow](Tutorial-workflow)
+3. [Local instalation](#Local-instalation)
+    1. [Using virtualenv](#Using-virtualenv)
+    2. [Using conda](#Using-conda)
+    3. [Adding the enviroment to your local notebook](#Adding-the-enviroment-to-your-local-notebook)
+    4. [Clean-up](#Clean-up)
+
+# Introduction
+This tutorial will guide you throught the usage of the ATLAS open-data provided for machine learning in substructure provided at <https://opendata.cern.ch/record/80030>. This open data includes fully simulates ATLAS detector Monte Carlo samples with Run-2 conditions for the binary classification problem of seperating top from QCD jets (known as tagging). Further details are found in the open data link. A complementary set of instruction on how to utlize this data can be found at <https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data>
+
+This open-data is attached to the publication [JINST 19 (2024) P08018](https://iopscience.iop.org/article/10.1088/1748-0221/19/08/P08018) and should be cited in conjunction.
+
+This tutorial would not be possible with the large effort from [Kevin Grief](https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data), who really made these studies possible.
+
 # How to use this tutorial
 This tutorial uses Jupyter for interactive notebooks.
 
 If you do not wish to download any new packages/materials locally you can use Binder to build an enviroment from the GitHub page directly and host it on a webpage. Simply go to the Binder website:
-[https://mybinder.org/](https://mybinder.org/), input the GitHub address and hit launch! This may take several minutes to build, and will not be very fast for interactivity so we also provide instructions on how to run the notebooks on a local laptop.
+[https://mybinder.org/](https://mybinder.org/), input the GitHub address <https://github.com/RobertLes/cometa-ML-tutorial> and hit launch! This may take several minutes to build, and will not be very fast for interactivity so we also provide instructions on how to run the notebooks on a local laptop.
+
+## Tutorial workflow
+There are 4 notebooks
+1. [inspect_inputs.ipynb](https://github.com/RobertLes/cometa-ML-tutorial/blob/main/inspect_inputs.ipynb) - Will guide you on how to access the open data
+2. [constituent_preprocessing.ipynb](https://github.com/RobertLes/cometa-ML-tutorial/blob/main/constituent_preprocessing.ipynb) - Will guide you on the recommended pre-processing of the open data file
+3. [train.ipynb](https://github.com/RobertLes/cometa-ML-tutorial/blob/main/train.ipynb) - A very basic walkthrough on how to run some example neural network training on these inputs
+4. [eval.ipynb](https://github.com/RobertLes/cometa-ML-tutorial/blob/main/eval.ipynb) - A basic walkthrough on usual and ATLAS metrics used to evaluete perfromance on this dataset
 
 # Local instalation:
 If you do not mind installing some new software temporarily we also provide instructions below for setuping the enviroment needed for this tutorial (mainly pytorch if you do not have it already). As to not interfere with your local installation we reccomend either using a virtualenv or conda to create isolated enviroments. We also provide instructions for removing these enviroments after the tutorial is finished.
@@ -45,6 +69,7 @@ For uninstalling the enviroment and cleaning your pip cache:
 ```
 rm -r ~/venv/CometaTutorial
 pip cache purge
+```
 ```
 Or similarly for conda:
 ```
